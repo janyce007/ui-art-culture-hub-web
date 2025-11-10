@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengenalan Produksi Media - UI Art & Culture Hub</title>
+  <style>
+    /* ======= GAYA DASAR ======= */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+      background-color: #fafafa;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      width: 90%;
+      max-width: 900px;
+      margin: 80px auto;
+      line-height: 1.8;
+    }
+
+    h1, h2 {
+      color: #002147;
+    }
+
+    /* ======= HERO / BAGIAN ATAS ======= */
+    .hero {
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* ======= TIMELINE ======= */
+    .timeline {
+      position: relative;
+      margin-top: 60px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: #ffcc00;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 45%;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-item:hover {
+      transform: scale(1.02);
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 55%;
+    }
+
+    .timeline-item h3 {
+      margin-top: 0;
+      color: #002147;
+    }
+
+    .timeline-item p {
+      margin: 5px 0 0;
+      color: #444;
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media screen and (max-width: 768px) {
+      .timeline::before {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 50px;
+      }
+    }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🎬 Produksi Media UI</div>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang Promed</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BAGIAN DESKRIPSI -->
+  <section id="tentang" class="hero">
+    <h1>Produksi Media Universitas Indonesia</h1>
+    <p>
+      Produksi Media (Promed) adalah program studi di Universitas Indonesia yang berfokus pada pembuatan konten media kreatif seperti film, animasi, iklan, dan media digital interaktif.  
+      Mahasiswa Promed belajar mulai dari proses pra-produksi, produksi, hingga pasca-produksi untuk menciptakan karya yang inovatif dan berdampak.
+    </p>
+
+    <p>
+      Di sini, mahasiswa tidak hanya mempelajari teknik produksi, tetapi juga bagaimana mengembangkan ide, mengelola tim, dan berkolaborasi lintas disiplin untuk menghasilkan karya berkualitas.
+    </p>
+  </section>
+
+  <!-- BAGIAN TIMELINE -->
+  <section id="timeline">
+    <h2 style="text-align:center;">📅 Timeline Kegiatan Promed</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>🎥 Januari 2025 – Workshop Produksi Film Pendek</h3>
+        <p>Mahasiswa semester awal mengikuti workshop pembuatan film pendek dari ide hingga editing.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>🎤 Maret 2025 – Kuliah Umum Industri Kreatif</h3>
+        <p>Guest speaker dari industri media membagikan pengalaman produksi profesional di dunia nyata.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>🎬 Mei 2025 – Festival Karya Mahasiswa</h3>
+        <p>Pameran hasil karya mahasiswa Produksi Media, termasuk film, animasi, dan dokumenter mini.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>📸 Agustus 2025 – Kolaborasi Lintas Jurusan</h3>
+        <p>Proyek bersama mahasiswa Desain Komunikasi Visual dan Ilmu Komputer untuk konten digital interaktif.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>🏆 November 2025 – UI Creative Awards</h3>
+        <p>Ajang penghargaan tahunan bagi karya terbaik dari mahasiswa Produksi Media UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 UI Art & Culture Hub | Program Studi Produksi Media</p>
+  </footer>
+</body>
+</html>
